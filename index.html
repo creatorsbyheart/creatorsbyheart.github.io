@@ -1,4 +1,50 @@
+<style>
+    :root{
+      --hcol : red;
+    }
+    .heart {
+      position: absolute;
+      margin: auto;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      background-color: var(--hcol);
+      height: 50px;
+      width: 50px;
+      transform: rotate(-45deg) ;
+    }
+    
+    .heart::after {
+      background-color: var(--hcol);
+      content: "";
+      border-radius: 50%;
+      position: absolute;
+      width: 50px;
+      height: 50px;
+      top: 0px;
+      left: 25px;
+    }
+     
+    .heart::before {
+      content: "" ;
+      background-color: var(--hcol);
+      border-radius: 50%;
+      position: absolute;
+      width: 50px;
+      height: 50px;
+      top: -25px;
+      left: 0px;
+    }
+  
+    .heart:hover{
+      transform :scale(2) rotate(-45deg);
+    }
+    
+    
+  </style>
 
+<body>
 <center>
 <h1>Welcome to Creators by Heart ❤️</h1>
 
@@ -6,4 +52,11 @@
 
 <h3>Lets make each other better</h3>
 
+<br>
+<a href="contctme.html"><button style="color: blue;">Contact me</button></a>
+
+<div class="heart"></div>
+
 </center>
+
+</body>
